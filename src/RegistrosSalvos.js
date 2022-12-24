@@ -5,13 +5,8 @@ class RegistrosSalvos extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = { date: new Date(), dados: [] };
+        this.state = { dados: [] };
         this.buscar.bind(this);
-
-    }
-
-    componentDidMount() {
-        //this.buscar()
     }
 
     buscar = () => {
@@ -30,7 +25,7 @@ class RegistrosSalvos extends React.Component {
         return (
             <div>
                 <button onClick={this.buscar} style={{cursor: 'pointer', borderRadius: "10px", backgroundColor: "lightblue", padding: "4px", marginTop: '10px', marginBottom: '10px' }}>
-                    <label style={{cursor: 'pointer', fontSize: '14px' }}>Buscar registros</label>
+                    <label style={{cursor: 'pointer', fontSize: '14px' }}>Buscar registros/atualizar</label>
                 </button>
                 <table id='tabelaRegistro' style={{ marginLeft: '400px' }}>
                     <thead>

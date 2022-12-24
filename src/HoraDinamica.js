@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import iconeClock from './icone-clock.png';
-import $ from "jquery";
-
 
 class HoraDinamica extends React.Component {
 
